@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+
+
+
+
+
+
+    <!--<div class="pesquisa">
+    <div *ngFor="let agregado of agregados" class="card text-bg-dark mb-3 row align-items-center row row-cols-1 row-cols-md-3">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="card h-100">
+                    <div class="card-body">
+            <h5 class="card-title card text-center text-white bg-dark">{{agregado.agregado}}</h5>
+            <p class="card-text card text-center text-white bg-dark">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>-->
+
+
+
+
+
+<div class="w3-row-padding w3-center w3-padding-64"  id="pricing">
+    <h2>SALDOS AGREGADOS</h2>
+
+    <div  *ngFor="let agregado of agregados" class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">{{agregado.agregado}}</p>
+        </li>
+        <li class="w3-padding-16"><b>{{agregado.saldo|currency}}</b></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
